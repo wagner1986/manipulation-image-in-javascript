@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--        bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </link>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+</head>
+
+<body>
+    <div class="container">
+        </br>
+        <div class="row">
+            <div class="col-md-10">
+
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="upload-file">
+                    <label for="upload-file" class="custom-file-label">Choose Image</label>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="Left">
+                        <canvas id="canvas-original"></canvas>
+                        <p>Original</p>
+                    </div>
+                    <div class="Right">
+                        <canvas id="canvas-novo"></canvas>
+                        <p>Modificado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <div class="btn-group btn-group-sm">
+                        <button class="filter-btn brightness-remove btn btn-info">-</button>
+                        <button class="btn btn-secondary btn-disabled">Brightness</button>
+                        <button class="filter-btn brightness-add btn btn-info">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="btn-group btn-group-sm">
+                        <button class="filter-btn contrast-remove btn btn-info">-</button>
+                        <button class="btn btn-secondary btn-disabled">Contrast</button>
+                        <button class="filter-btn contrast-add btn btn-info">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="btn-group btn-group-sm">
+                        <button class="filter-btn exposure-remove btn btn-info">-</button>
+                        <button class="btn btn-secondary btn-disabled">Exposure</button>
+                        <button class="filter-btn exposure-add btn btn-info">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="btn-group btn-group-sm">
+                        <button class="filter-btn saturation-remove btn btn-info">-</button>
+                        <button class="btn btn-secondary btn-disabled">Saturation</button>
+                        <button class="filter-btn saturation-add btn btn-info">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="btn-group btn-group-sm">
+                        <button class="filter-btn greyscale btn btn-info">Greyscale</button>
+                        <button class="filter-btn reset btn btn-info">Reset</button>
+                        <button class="filter-btn save btn btn-info">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='./js/process-image.js'></script>
+    <script src='./js/caman.full.min.js'></script>
+</body>
+
+</html>
